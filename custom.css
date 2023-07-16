@@ -1,73 +1,122 @@
-.user-css .tagged-articles-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-  gap: 2rem;
-}
-
-.user-css .thales-render {
- --ComponentBorder: [strike][/strike]1px solid transparent;
- --ComponentPadding: 1em 1em;
- --ComponentBackground: transparent;
- --ComponentSplashBackground: rgba(0,0,0,0.4) ;
- --TableContainerBackground: transparent;
- --TableContainerBorder: 0px solid rgba(99,99,99,0.5) ;
- --TableBorder: 1px solid #999;
- --TableBackground: #fff;
- --TableHeaderBackground: #2c2e35;
- --TableHeaderBorder: 1px solid #222;
- --TableHeaderFontColor: #fff;
- --TableHeaderFontSize: 1.2em;
- --TableHeaderFontWeight: 700;
- --TableHeaderControlsColor: #ddd;
- --TableHeaderPadding: 10px 10px;
- --TableHeaderButtonBackground: #4f6d88;
- --TableHeaderButtonIconColor: #fff;
- --TableRowBorder: 1px solid #c0c0c0;
- --TableRowHoverBackground: #efefef;
- --TableRowRollBackground: #c9f2ff;
- --TableCellBackground: transparent;
- --TableCellFontColor: #222;
- --TableCellPlaceholderColor: #a0a0a0;
- --TableCellPadding: 10px 10px;
- --TableCellBackgroundHover: transparent;
- --TableCellBorder: 1px solid #ddd;
-}
-
-.user-css-presentation .breadcrumb {
-background-color: #000;
-}
-
-.user-css div.articletoc {
-border: none;
-}
-
-.user-css div.articletoc .article-toc-link {
-transition: 0s;
-border-bottom: none;
-}
-
-.user-css .articletoc {
-background: #14161b;
-color: #fff;
-width:242px;
-max-height: 100%;
-position: fixed;
-top: 250px;
-left: 0px;
-z-index: 4;
-overflow: hidden;
-}
-
-.user-css .marker-content .header-title {
-color: white;
-font-size: 16px;
-}
-
-.user-css .map-open-full, .user-css .map-edit {
-background-color: #4d4545;
-color: white;
-}
-
-.user-css .leaflet-control-layers-overlays span {
-color: white;
-}
+@font-face {
+  font-family: Killigrew;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.statically.io/gh/smrflynn/world_anvil_symbaroum/main/fonts/killigrew/Killig.ttf) ;
+ }
+ 
+ @font-face {
+  font-family: Washington;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.statically.io/gh/smrflynn/world_anvil_symbaroum/main/fonts/washington_text/WashingtonText.ttf) ;
+ }
+ 
+ .user-css .article-title h1 {
+     font-family: killigrew;
+     font-weight: 100;
+     font-size: 70px;
+     padding-top: 10px;
+     padding-bottom: 15px;
+     line-height: 0.9em;
+     margin-top: 20px;
+     margin-bottom: 5px;
+ }
+ 
+ .user-css h2 {
+     font-family: Washington;
+     font-weight: 100;
+     font-size: 42px;
+     padding-bottom: 2px;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: var(--eldritch-light);;
+     text-transform: capitalize;
+     line-height: 1.3em;
+ }
+ 
+ .user-css h3 {
+     font-family: Washington;
+     font-weight: 100;
+     font-size: 26px;
+     margin-top: 0.8em;
+     margin-bottom: 0.5em;
+     line-height: 1.3em;
+     text-transform: capitalize;
+     font-variant: none;
+     border-top: 3px solid;
+     border-bottom: 3px solid;
+     color: var(--eldritch-light);
+ }
+ 
+ .user-css .table-of-contents h2, .user-css .world-featured-articles h2, .user-css .world-recent-articles h2, .user-css .world-maps-list h2, .user-css div#world-maps h2, .user-css .world-social-media h2, .user-css .world-campaigns-title {
+   font-family: Washington;
+   font-size: 30px;
+   font-weight: 50;
+ }
+ 
+ 
+ .user-css .tagged-articles-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+   gap: 2rem;
+ }
+ 
+ .user-css .thales-render {
+  --ComponentBorder: [strike][/strike]1px solid transparent;
+  --ComponentPadding: 1em 1em;
+  --ComponentBackground: transparent;
+  --ComponentSplashBackground: rgba(0,0,0,0.4) ;
+  --TableContainerBackground: transparent;
+  --TableContainerBorder: 0px solid rgba(99,99,99,0.5) ;
+  --TableBorder: 1px solid #999;
+  --TableBackground: #fff;
+  --TableHeaderBackground: #2c2e35;
+  --TableHeaderBorder: 1px solid #222;
+  --TableHeaderFontColor: #fff;
+  --TableHeaderFontSize: 1.2em;
+  --TableHeaderFontWeight: 700;
+  --TableHeaderControlsColor: #ddd;
+  --TableHeaderPadding: 10px 10px;
+  --TableHeaderButtonBackground: #4f6d88;
+  --TableHeaderButtonIconColor: #fff;
+  --TableRowBorder: 1px solid #c0c0c0;
+  --TableRowHoverBackground: #efefef;
+  --TableRowRollBackground: #c9f2ff;
+  --TableCellBackground: transparent;
+  --TableCellFontColor: #222;
+  --TableCellPlaceholderColor: #a0a0a0;
+  --TableCellPadding: 10px 10px;
+  --TableCellBackgroundHover: transparent;
+  --TableCellBorder: 1px solid #ddd;
+ }
+ 
+ .user-css-presentation .breadcrumb {
+ background-color: #000;
+ }
+ 
+ .user-css div.articletoc {
+ border: none;
+ }
+ 
+ .user-css .articletoc {
+ background: #14161b;
+ color: #fff;
+ width:100%;
+ max-height: 100%;
+ overflow: hidden;
+ }
+ 
+ .user-css .marker-content .header-title {
+ color: white;
+ font-size: 16px;
+ }
+ 
+ .user-css .map-open-full, .user-css .map-edit {
+ background-color: #4d4545;
+ color: white;
+ }
+ 
+ .user-css .leaflet-control-layers-overlays span {
+ color: white;
+ }
