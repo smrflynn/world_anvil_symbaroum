@@ -47,28 +47,15 @@ border-bottom: none;
 }
 
 .user-css .articletoc {
- background: #14161b;
- color: #fff;
- width: 242px;
- max-height: 42px;
- position: fixed;
- top: 250px;
- left: -200px;
- z-index: 4;
- overflow: hidden;
- transition: 1s ease;
-}
-
-.user-css .articletoc::before {
-content: url(https://www.worldanvil.com/uploads/images/ee67b50f0368ec35b5a624164cccb8c4.png) ;
-position: absolute;
-top: 6px;
-right: 6px;
-}
-
-.user-css .articletoc:hover {
- max-height: 100%;
- left: 0px;
+background: #14161b;
+color: #fff;
+width:242px;
+max-height: 100%;
+position: fixed;
+top: 250px;
+left: 0px;
+z-index: 4;
+overflow: hidden;
 }
 
 .user-css .marker-content .header-title {
@@ -78,5 +65,9 @@ font-size: 16px;
 
 .user-css .map-open-full, .user-css .map-edit {
 background-color: #4d4545;
+color: white;
+}
+
+.user-css .leaflet-control-layers-overlays span {
 color: white;
 }
