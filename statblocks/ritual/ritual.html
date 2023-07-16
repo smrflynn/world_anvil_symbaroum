@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ritual.css">
+</head>
+
+
+<div class="container-fluid sym-base">
+    <div class="sym-item-block col-12">
+        <div class="row align-self-start">
+            <div class="col-12 sym-card">
+                <div class="sym-card-title">
+                    {{ variables.name }}
+                </div>
+                <div class="sym-card-body">
+                    {% if variables.tradition is defined and variables.tradition != "" %}
+                        <span class="sym-description">Tradition:</span> {{ variables.tradition }}<br>
+                    {% endif %}
+                    {% if variables.material is defined and variables.material != "" %}
+                        <span class="sym-description">Material:</span> {{ variables.material }}<br>
+                    {% endif %}
+                    {% if variables.description is defined and variables.description != "" %}
+                        <div class="sym-item-text">
+                            {{variables.description}}
+                        </div>
+                    {% endif %}
+                    {% if variables.description is defined and variables.description != "" %}
+                        <div class="sym-item-text">
+                            {{variables.description}}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

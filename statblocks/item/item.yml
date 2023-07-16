@@ -1,0 +1,181 @@
+fields:
+  type:
+    input: string
+    label: "Type"
+    placeholder: "Weapon"
+  image:
+    input: integer
+    render: image
+    description: "paste here the ID of the image you want to be used as the image of the item"
+    label: "Image"
+    placeholder: "123"
+  armor:
+    input: string
+    label: "Armor"
+    placeholder: "1D6"
+  damage:
+    input: string
+    label: "Damage"
+    placeholder: "1D6"
+  qualities:
+    input: string
+    label: "Qualities"
+    placeholder: "Deep Impact, Flexible"
+  cost:
+    input: string
+    label: "Cost"
+    placeholder: "12 thaler"
+  description:
+    input: text
+    rows: 10
+    label: "Description"
+
+  first_power:
+    input: string
+    label: "First Power"
+    description: "Optional field to describe artifact powers"
+    placeholder: "Strike with Fire"
+  first_power_description:
+    input: text
+    rows: 10
+    label: "First Power Description"
+  first_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "First Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+  first_power_corruption:
+    input: string
+    label: "First Power Corruption"
+    description: "The amount of temporary corruption gained when using this power"
+    placeholder: "1D4"
+
+  second_power:
+    input: string
+    label: "Second Power"
+    description: "Optional field to describe artifact powers"
+    placeholder: "Strike with Fire"
+  second_power_description:
+    input: text
+    rows: 10
+    label: "Second Power Description"
+  second_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Second Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+  second_power_corruption:
+    input: string
+    label: "Second Power Corruption"
+    description: "The amount of temporary corruption gained when using this power"
+    placeholder: "1D4"
+
+  third_power:
+    input: string
+    label: "Third Power"
+    description: "Optional field to describe artifact powers"
+    placeholder: "Strike with Fire"
+  third_power_description:
+    input: text
+    rows: 10
+    label: "Third Power Description"
+  third_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Third Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+  third_power_corruption:
+    input: string
+    label: "Third Power Corruption"
+    description: "The amount of temporary corruption gained when using this power"
+    placeholder: "1D4"
+
+  fourth_power:
+    input: string
+    label: "Fourth Power"
+    description: "Optional field to describe artifact powers"
+    placeholder: "Strike with Fire"
+  fourth_power_description:
+    input: text
+    rows: 10
+    label: "Fourth Power Description"
+  fourth_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Fourth Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+  fourth_power_corruption:
+    input: string
+    label: "Fourth Power Corruption"
+    description: "The amount of temporary corruption gained when using this power"
+    placeholder: "1D4"
+
+  fifth_power:
+    input: string
+    label: "Fifth Power"
+    description: "Optional field to describe artifact powers"
+    placeholder: "Strike with Fire"
+  fifth_power_description:
+    input: text
+    rows: 10
+    label: "Fifth Power Description"
+  fifth_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Fifth Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+  fifth_power_corruption:
+    input: string
+    label: "Fifth Power Corruption"
+    description: "The amount of temporary corruption gained when using this power"
+    placeholder: "1D4"
+
+  sixth_power:
+    input: string
+    label: "Sixth Power"
+    description: "Optional field to describe artifact powers"
+    placeholder: "Strike with Fire"
+  sixth_power_description:
+    input: text
+    rows: 10
+    label: "Sixth Power Description"
+  sixth_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Sixth Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+  sixth_power_corruption:
+    input: string
+    label: "Sixth Power Corruption"
+    description: "The amount of temporary corruption gained when using this power"
+    placeholder: "1D4"

@@ -1,0 +1,6 @@
+fields:
+  description:
+    required: true
+    input: text
+    rows: 10
+    label: "Description"

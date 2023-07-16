@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ceremony.css">
+</head>
+
+
+<div class="container-fluid sym-base">
+    <div class="sym-item-block col-12">
+        <div class="row align-self-start">
+            <div class="col-12 sym-card">
+                <div class="sym-card-title">
+                    {{ variables.name }}
+                </div>
+                <div class="sym-card-body">
+                    {% if variables.tradition is defined and variables.tradition != "" %}
+                        <span class="sym-description">Tradition:</span> {{ variables.tradition }}<br>
+                    {% endif %}
+                    {% if variables.ceremonial_focus is defined and variables.ceremonial_focus != "" %}
+                        <span class="sym-description">Ceremonial Focus:</span> {{ variables.ceremonial_focus }}<br>
+                    {% endif %}
+                    {% if variables.description is defined and variables.description != "" %}
+                        <div class="sym-item-text">
+                            {{variables.description}}
+                        </div>
+                    {% endif %}
+                    {% if variables.description is defined and variables.description != "" %}
+                        <div class="sym-item-text">
+                            {{variables.description}}
+                        </div>
+                    {% endif %}
+                    <hr class="sym-divider" />
+                    <div style="overflow-x: auto;">
+                        <table class="sym-table">
+                            {% if variables.half_effect is defined and variables.half_effect != "" %}
+                                <tr>
+                                    <td class="sym-table-data-left"><span class="sym-description">Half Effect</span></td>
+                                    <td class="sym-table-data">{{variables.half_effect}}</td>
+                                </tr>
+                            {% endif %}
+                            {% if variables.full_effect is defined and variables.full_effect != "" %}
+                                <tr>
+                                    <td class="sym-table-data-left"><span class="sym-description">Full Effect</span></td>
+                                    <td class="sym-table-data">{{variables.full_effect}}</td>
+                                </tr>
+                            {% endif %}
+                            {% if variables.unique_side_effect is defined and variables.master_power != "" %}
+                                <tr>
+                                    <td class="sym-table-data-left"><span class="sym-description">Unique Side Effect</span></td>
+                                    <td class="sym-table-data">{{variables.unique_side_effect}}</td>
+                                </tr>
+                            {% endif %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

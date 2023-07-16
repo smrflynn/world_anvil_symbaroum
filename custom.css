@@ -1,0 +1,82 @@
+.user-css .tagged-articles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 2rem;
+}
+
+.user-css .thales-render {
+ --ComponentBorder: [strike][/strike]1px solid transparent;
+ --ComponentPadding: 1em 1em;
+ --ComponentBackground: transparent;
+ --ComponentSplashBackground: rgba(0,0,0,0.4) ;
+ --TableContainerBackground: transparent;
+ --TableContainerBorder: 0px solid rgba(99,99,99,0.5) ;
+ --TableBorder: 1px solid #999;
+ --TableBackground: #fff;
+ --TableHeaderBackground: #2c2e35;
+ --TableHeaderBorder: 1px solid #222;
+ --TableHeaderFontColor: #fff;
+ --TableHeaderFontSize: 1.2em;
+ --TableHeaderFontWeight: 700;
+ --TableHeaderControlsColor: #ddd;
+ --TableHeaderPadding: 10px 10px;
+ --TableHeaderButtonBackground: #4f6d88;
+ --TableHeaderButtonIconColor: #fff;
+ --TableRowBorder: 1px solid #c0c0c0;
+ --TableRowHoverBackground: #efefef;
+ --TableRowRollBackground: #c9f2ff;
+ --TableCellBackground: transparent;
+ --TableCellFontColor: #222;
+ --TableCellPlaceholderColor: #a0a0a0;
+ --TableCellPadding: 10px 10px;
+ --TableCellBackgroundHover: transparent;
+ --TableCellBorder: 1px solid #ddd;
+}
+
+.user-css-presentation .breadcrumb {
+background-color: #000;
+}
+
+.user-css div.articletoc {
+border: none;
+}
+
+.user-css div.articletoc .article-toc-link {
+transition: 0s;
+border-bottom: none;
+}
+
+.user-css .articletoc {
+ background: #14161b;
+ color: #fff;
+ width: 242px;
+ max-height: 42px;
+ position: fixed;
+ top: 250px;
+ left: -200px;
+ z-index: 4;
+ overflow: hidden;
+ transition: 1s ease;
+}
+
+.user-css .articletoc::before {
+content: url(https://www.worldanvil.com/uploads/images/ee67b50f0368ec35b5a624164cccb8c4.png) ;
+position: absolute;
+top: 6px;
+right: 6px;
+}
+
+.user-css .articletoc:hover {
+ max-height: 100%;
+ left: 0px;
+}
+
+.user-css .marker-content .header-title {
+color: white;
+font-size: 16px;
+}
+
+.user-css .map-open-full, .user-css .map-edit {
+background-color: #4d4545;
+color: white;
+}

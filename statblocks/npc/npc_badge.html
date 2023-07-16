@@ -1,0 +1,156 @@
+<div class="container-fluid">
+    <div class="sym-item-block col-12">
+        <div class="row align-self-start">
+            <div class="col-12 sym-card">
+                <div class="sym-card-title">
+                    {{ variables.name }}
+                </div>
+                {% if variables.quote is defined and variables.quote != "" %}
+                <div class="sym-card-subtitle-quote">
+                    {{ variables.quote }}
+                </div>
+                {% endif %}
+                <div class="sym-card-body">
+                    <div style="overflow-x: auto;">
+                        <table class="sym-table">
+                            {% if variables.manner is defined and variables.manner != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Manner</span><br>
+                                    <span style="margin-left:15px">{{ variables.manner }}</span></td>
+                            </tr>
+                            {% endif %}
+                            {% if variables.race is defined and variables.race != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Race</span><br>
+                                    <span style="margin-left:15px">{{ variables.race }}</span></td>
+                            </tr>
+                            {% endif %}
+                            {% if variables.resistance is defined and variables.resistance != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Resistance</span><br>
+                                    <span style="margin-left:15px">{{ variables.resistance }}</span></td>
+                            </tr>
+                            {% endif %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data" colspan="2">
+                                    <div style="overflow-x: auto;">
+                                    <table class="sym-table">
+                                        <tr>
+                                            <td class="sym-table-data-attr">ACC</td>
+                                            <td class="sym-table-data-attr">CUN</td>
+                                            <td class="sym-table-data-attr">DES</td>
+                                            <td class="sym-table-data-attr">PER</td>
+                                            <td class="sym-table-data-attr">QUI</td>
+                                            <td class="sym-table-data-attr">RES</td>
+                                            <td class="sym-table-data-attr">STR</td>
+                                            <td class="sym-table-data-attr">VIG</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.accurate  > 0 ? "+"~(10 - variables.accurate):(10 - variables.accurate)}}</span></td>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.cunning  > 0 ? "+"~(10 - variables.cunning):(10 - variables.cunning)}}</span></td>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.discreet  > 0 ? "+"~(10 - variables.discreet):(10 - variables.discreet)}}</span></td>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.persuasive  > 0 ? "+"~(10 - variables.persuasive):(10 - variables.persuasive)}}</span></td>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.quick  > 0 ? "+"~(10 - variables.quick):(10 - variables.quick)}}</span></td>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.resolute  > 0 ? "+"~(10 - variables.resolute):(10 - variables.resolute)}}</span></td>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.strong  > 0 ? "+"~(10 - variables.strong):(10 - variables.strong)}}</span></td>
+                                            <td class="sym-table-data-attr"><span class="sym-description">{{10 - variables.vigilant  > 0 ? "+"~(10 - variables.vigilant):(10 - variables.vigilant)}}</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sym-table-data-attr-double" colspan="3">Defense</td>
+                                            <td class="sym-table-data-attr-double" colspan="3">Toughness</td>
+                                            <td class="sym-table-data-attr-double" colspan="2">Pain Threshold</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sym-table-data-attr-double" colspan="3"><span class="sym-description">{{variables.defense}}</span></td>
+                                            <td class="sym-table-data-attr-double" colspan="3"><span class="sym-description">{{variables.toughness}}</span></td>
+                                            <td class="sym-table-data-attr-double" colspan="2"><span class="sym-description">{{variables.pain_threshold}}</span></td>
+                                        </tr>
+                                    </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Armor</span><br>
+                                    <span style="margin-left:15px">{{ variables.armor }}</span></td>
+                            </tr>
+                            {% if  (variables.weapon_one is defined and variables.weapon_one != "" ) or
+                            (variables.weapon_two is defined and variables.weapon_two != "" ) or
+                            (variables.weapon_three is defined and variables.weapon_three != "" ) or
+                            (variables.weapon_four is defined and variables.weapon_four != "" ) %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data" colspan="2">
+                                    <span class="sym-description">Weapons</span>
+                                        <table>
+                                            {% if variables.weapon_one is defined and variables.weapon_one != "" %}
+                                            <tr>
+                                                <td class="sym-table-data">{{variables.weapon_one_attribute}}</td>
+                                                <td class="sym-table-data">{{variables.weapon_one}}</td>
+                                            </tr>
+                                            {% endif %}
+                                            {% if variables.weapon_two is defined and variables.weapon_two != "" %}
+                                            <tr>
+                                                <td class="sym-table-data">{{variables.weapon_two_attribute}}</td>
+                                                <td class="sym-table-data">{{variables.weapon_two}}</td>
+                                            </tr>
+                                            {% endif %}
+                                            {% if variables.weapon_three is defined and variables.weapon_three != "" %}
+                                            <tr>
+                                                <td class="sym-table-data">{{variables.weapon_three_attribute}}</td>
+                                                <td class="sym-table-data">{{variables.weapon_three}}</td>
+                                            </tr>
+                                            {% endif %}
+                                            {% if variables.weapon_four is defined and variables.weapon_four != "" %}
+                                            <tr>
+                                                <td class="sym-table-data">{{variables.weapon_four_attribute}}</td>
+                                                <td class="sym-table-data">{{variables.weapon_four}}</td>
+                                            </tr>
+                                            {% endif %}
+                                        </table>
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% if variables.traits is defined and variables.traits != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Traits</span><br>
+                                    <span style="margin-left:15px">{{ variables.traits }}</span></td>
+                            </tr>
+                            {% endif %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Abilities</span><br>
+                                    <span style="margin-left:15px">{{ variables.abilities }}</span></td>
+                            </tr>
+                            {% if variables.boons_and_burdens is defined and variables.boons_and_burdens != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Boons/ Burdens</span><br>
+                                    <span style="margin-left:15px">{{ variables.boons_and_burdens }}</span></td>
+                            </tr>
+                            {% endif %}
+                            {% if variables.integrated is defined and variables.integrated != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Integrated</span><br>
+                                    <span style="margin-left:15px">{{ variables.integrated }}</span></td>
+                            </tr>
+                            {% endif %}
+                            {% if variables.equipment is defined and variables.equipment != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Equipment</span><br>
+                                    <span style="margin-left:15px">{{ variables.equipment }}</span></td>
+                            </tr>
+                            {% endif %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Shadow</span><br>
+                                    <span style="margin-left:15px">{{ variables.shadow }}</span></td>
+                            </tr>
+                            {% if variables.tactics is defined and variables.tactics != "" %}
+                            <tr class="sym-table-striped">
+                                <td class="sym-table-data"><span class="sym-description">Tactics</span><br>
+                                    <span style="margin-left:15px">{{ variables.tactics }}</span></td>
+                            </tr>
+                            {% endif %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

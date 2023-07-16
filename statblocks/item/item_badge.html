@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="item.css">
+</head>
+
+
+<div class="container-fluid sym-base">
+    <div class="sym-item-block col-12">
+        <div class="row align-self-start">
+            <div class="col-12 sym-card">
+                <div class="sym-card-title">
+                    {{ variables.name }}
+                </div>
+                {% if variables.type is defined and variables.type != '' %}
+                    <div class="sym-card-subtitle">
+                        {{ variables.type }}
+                    </div>
+                {% endif %}
+                <div class="sym-card-body">
+                    {% if variables.armor is defined and variables.armor != "" %}
+                        <span class="sym-description">Armor:</span> {{variables.armor}} <br>
+                    {% endif %}
+                    {% if variables.damage is defined and variables.damage != "" %}
+                        <span class="sym-description">Damage:</span> {{variables.damage}} <br>
+                    {% endif %}
+                    {% if variables.qualities is defined and variables.qualities != "" %}
+                        <span class="sym-description">Qualities:</span> {{variables.qualities}} <br>
+                    {% endif %}
+                    {% if variables.cost is defined and variables.cost != "" %}
+                        <span class="sym-description">Cost:</span> {{variables.cost}}
+                    {% endif %}
+                    {% if variables.description is defined and variables.description != "" %}
+                        <hr class="sym-divider" />
+                        <div class="sym-item-text">
+                            {{variables.description}}
+                        </div>
+                    {% endif %}
+                    {% if variables.first_power is defined and variables.first_power != "" %}
+                        <hr class="sym-divider" />
+                        <div class="sym-item-text">
+                            <span class="sym-description">{{variables.first_power}}:</span>
+                            {{variables.first_power_description}}<br>
+                            <span class="sym-description">Action:</span> {{variables.first_power_action}}<br>
+                            <span class="sym-description">Corruption:</span> {{variables.first_power_corruption}}
+                        </div>
+                    {% endif %}
+                    {% if variables.second_power is defined and variables.second_power != "" %}
+                        <hr class="sym-divider" />
+                        <div class="sym-item-text">
+                            <span class="sym-description">{{variables.second_power}}:</span>
+                            {{variables.second_power_description}}<br>
+                            <span class="sym-description">Action:</span> {{variables.second_power_action}}<br>
+                            <span class="sym-description">Corruption:</span> {{variables.second_power_corruption}}
+                        </div>
+                    {% endif %}
+                    {% if variables.third_power is defined and variables.third_power != "" %}
+                        <hr class="sym-divider" />
+                        <div class="sym-item-text">
+                            <span class="sym-description">{{variables.third_power}}:</span>
+                            {{variables.third_power_description}}<br>
+                            <span class="sym-description">Action:</span> {{variables.third_power_action}}<br>
+                            <span class="sym-description">Corruption:</span> {{variables.third_power_corruption}}
+                        </div>
+                    {% endif %}
+                    {% if variables.fourth_power is defined and variables.fourth_power != "" %}
+                        <hr class="sym-divider" />
+                        <div class="sym-item-text">
+                            <span class="sym-description">{{variables.fourth_power}}:</span>
+                            {{variables.fourth_power_description}}<br>
+                            <span class="sym-description">Action:</span> {{variables.fourth_power_action}}<br>
+                            <span class="sym-description">Corruption:</span> {{variables.fourth_power_corruption}}
+                        </div>
+                    {% endif %}
+                    {% if variables.fifth_power is defined and variables.fifth_power != "" %}
+                        <hr class="sym-divider" />
+                        <div class="sym-item-text">
+                            <span class="sym-description">{{variables.fifth_power}}:</span>
+                            {{variables.fifth_power_description}}<br>
+                            <span class="sym-description">Action:</span> {{variables.fifth_power_action}}<br>
+                            <span class="sym-description">Corruption:</span> {{variables.fifth_power_corruption}}
+                        </div>
+                    {% endif %}
+                    {% if variables.sixth_power is defined and variables.sixth_power != "" %}
+                        <hr class="sym-divider"/>
+                        <div class="sym-item-text">
+                            <span class="sym-description">{{variables.sixth_power}}:</span>
+                            {{variables.sixth_power_description}}<br>
+                            <span class="sym-description">Action:</span> {{variables.sixth_power_action}}<br>
+                            <span class="sym-description">Corruption:</span> {{variables.sixth_power_corruption}}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

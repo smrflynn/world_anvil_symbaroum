@@ -1,0 +1,30 @@
+fields:
+  tradition:
+    input: string
+    label: "Tradition"
+    description: "The tradition this mystic power belongs to."
+    placeholder: "Sorcery, Troll Singing"
+
+  ceremonial_focus:
+    input: string
+    label: "Ceremonial Focus"
+
+  description:
+    input: text
+    rows: 10
+    label: "Description"
+
+  half_effect:
+    input: text
+    rows: 5
+    label: "Half Effect"
+
+  full_effect:
+    input: text
+    rows: 5
+    label: "Full Effect"
+
+  unique_side_effect:
+    input: text
+    rows: 5
+    label: "Unique Side Effect"

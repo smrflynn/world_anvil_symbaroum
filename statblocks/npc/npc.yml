@@ -1,0 +1,236 @@
+fields:
+
+  description:
+    input: text
+    rows: 10
+    label: "Description"
+
+  image:
+    input: integer
+    render: image
+    description: "paste here the ID of the image you want to be used as the image of the item"
+    label: "Image"
+    placeholder: "123"
+
+  quote:
+    input: string
+    label: "Quote"
+    description: "What does this person say?"
+    placeholder: "\"Bow before your queen!\""
+
+  manner:
+    input: string
+    label: "Manner"
+    description: "How does this person behave in one sentence?"
+    placeholder: "Quick with eyes darting"
+
+  race:
+    input: string
+    label: "Race"
+    description: "The race or creature group this person belongs to"
+    placeholder: "Elf"
+
+  resistance:
+    input: string
+    label: "Resistance"
+    description: "The resistance rating of this person"
+    placeholder: "Ordinary"
+
+  accurate:
+    input: integer
+    label: "Accurate"
+    required: true
+
+  cunning:
+    input: integer
+    label: "Cunning"
+    required: true
+
+  discreet:
+    input: integer
+    label: "Discreet"
+    required: true
+
+  persuasive:
+    input: integer
+    label: "Persuasive"
+    required: true
+
+  quick:
+    input: integer
+    label: "Quick"
+    required: true
+
+  resolute:
+    input: integer
+    label: "Resolute"
+    required: true
+
+  strong:
+    input: integer
+    label: "Strong"
+    required: true
+
+  vigilant:
+    input: integer
+    label: "Vigilant"
+    required: true
+
+  traits:
+    input: text
+    rows: 3
+    label: "Traits"
+    description: "A list of all traits this person possess"
+
+  abilities:
+    input: text
+    rows: 3
+    label: "Abilities"
+    required: true
+    description: "A list of all abilities this person possess"
+    placeholder: "None"
+
+  boons_and_burdens:
+    input: string
+    label: "Boons and Burdens"
+    description: "A list of all boons and burdens this person possess"
+
+  integrated:
+    input: text
+    rows: 3
+    label: "Integrated"
+    description: "A list of all integrated abilities and/or traits this person possesses"
+
+  armor:
+    input: string
+    label: "Armor"
+    required: true
+    description: "The type of armor and how much damage is reduced"
+    placeholder: "Blessed robe 2 (Flexible)"
+
+  defense:
+    input: string
+    label: "Defense"
+    required: true
+    description: "The defense modifier and any other needed information"
+    placeholder: "-3 (Shield)"
+
+  defense:
+    input: string
+    label: "Defense"
+    required: true
+    description: "The defense modifier and any other needed information"
+    placeholder: "-3 (Shield)"
+
+  toughness:
+    input: integer
+    label: "Toughness"
+    required: true
+    description: "The current toughness value"
+
+  pain_threshold:
+    input: integer
+    label: "Pain Threshold"
+    required: true
+
+  shadow:
+    input: string
+    label: "Shadow"
+    required: true
+    description: "A description of the shadow and the current permanent corruption value"
+    placeholder: "White with veins of emerald green (corruption: 0)"
+
+  tactics:
+    input: text
+    rows: 5
+    label: "Tactics"
+    description: "How will this person act in combat?"
+
+  equipment:
+    input: text
+    lines: 4
+    label: "Equipment"
+
+  weapon_one:
+    input: string
+    label: "Weapon One"
+    description: "The type of weapon, damage value, and any qualities it has"
+    placeholder: "Spear 4 (long)"
+
+  weapon_one_attribute:
+    input: select
+    label: "Weapon One Attribute"
+    description: "What attribute is used for attacks?"
+    placeholder: "Spear 4 (long)"
+    options:
+          Accurate: Accurate
+          Cunning: Cunning
+          Discreet: Discreet
+          Persuasive: Persuasive
+          Quick: Quick
+          Resolute: Resolute
+          Strong: Strong
+          Vigilant: Vigilant
+
+  weapon_two:
+    input: string
+    label: "Weapon Two"
+    description: "The type of weapon, damage value, and any qualities it has"
+    placeholder: "Spear 4 (long)"
+
+  weapon_two_attribute:
+    input: select
+    label: "Weapon Two Attribute"
+    description: "What attribute is used for attacks?"
+    placeholder: "Spear 4 (long)"
+    options:
+          Accurate: Accurate
+          Cunning: Cunning
+          Discreet: Discreet
+          Persuasive: Persuasive
+          Quick: Quick
+          Resolute: Resolute
+          Strong: Strong
+          Vigilant: Vigilant
+
+  weapon_three:
+    input: string
+    label: "Weapon Three"
+    description: "The type of weapon, damage value, and any qualities it has"
+    placeholder: "Spear 4 (long)"
+
+  weapon_three_attribute:
+    input: select
+    label: "Weapon Three Attribute"
+    description: "What attribute is used for attacks?"
+    placeholder: "Spear 4 (long)"
+    options:
+          Accurate: Accurate
+          Cunning: Cunning
+          Discreet: Discreet
+          Persuasive: Persuasive
+          Quick: Quick
+          Resolute: Resolute
+          Strong: Strong
+          Vigilant: Vigilant
+
+  weapon_four:
+    input: string
+    label: "Weapon Four"
+    description: "The type of weapon, damage value, and any qualities it has"
+    placeholder: "Spear 4 (long)"
+
+  weapon_four_attribute:
+    input: select
+    label: "Weapon Four Attribute"
+    description: "What attribute is used for attacks?"
+    placeholder: "Spear 4 (long)"
+    options:
+          Accurate: Accurate
+          Cunning: Cunning
+          Discreet: Discreet
+          Persuasive: Persuasive
+          Quick: Quick
+          Resolute: Resolute
+          Strong: Strong
+          Vigilant: Vigilant

@@ -1,0 +1,17 @@
+fields:
+  tradition:
+    input: string
+    label: "Tradition"
+    description: "The tradition this mystic power belongs to."
+    placeholder: "Sorcery, Troll Singing"
+
+  material:
+    input: string
+    label: "Material"
+    description: "Any material components for using this power"
+    placeholder: "A short piece of a rusty chain"
+
+  description:
+    input: text
+    rows: 15
+    label: "Description"

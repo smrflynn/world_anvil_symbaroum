@@ -1,0 +1,81 @@
+fields:
+  tradition:
+    input: string
+    label: "Tradition"
+    description: "The tradition this mystic power belongs to."
+    placeholder: "Sorcery, Troll Singing"
+
+  material:
+    input: string
+    label: "Material"
+    description: "Any material components for using this power"
+    placeholder: "A short piece of a rusty chain"
+
+  description:
+    input: text
+    rows: 10
+    label: "Description"
+
+  novice_power:
+    input: text
+    rows: 5
+    label: "Novice Power"
+
+  novice_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Novice Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+
+  adept_power:
+    input: text
+    rows: 5
+    label: "Adept Power"
+
+  adept_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Adept Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+
+  master_power:
+    input: text
+    rows: 5
+    label: "Master Power"
+
+  master_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Master Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+
+  grandmaster_power:
+    input: text
+    rows: 5
+    label: "Grandmaster Power"
+
+  grandmaster_power_action:
+    input: select
+    description: "The action type of this power"
+    label: "Grandmaster Power Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special

@@ -1,0 +1,69 @@
+fields:
+  description:
+    input: text
+    rows: 10
+    label: "Description"
+
+  rank_one:
+    input: text
+    rows: 3
+    label: "Rank One"
+    description: "The rank one power description"
+  rank_one_action:
+    input: select
+    description: "The action type of this power"
+    label: "Rank One Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+
+  rank_two:
+    input: text
+    rows: 3
+    label: "Rank Two"
+    description: "The rank two power description"
+  rank_two_action:
+    input: select
+    description: "The action type of this power"
+    label: "Rank Two Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+
+  rank_three:
+    input: text
+    rows: 3
+    label: "Rank Three"
+    description: "The rank three power description"
+  rank_three_action:
+    input: select
+    description: "The action type of this power"
+    label: "Rank Three Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
+
+  rank_four:
+    input: text
+    rows: 3
+    label: "Rank Four"
+    description: "The rank four power description"
+  rank_four_action:
+    input: select
+    description: "The action type of this power"
+    label: "Rank Four Action"
+    options:
+      Active: Active
+      Free: Free
+      Passive: Passive
+      Reaction: Reaction
+      Special: Special
